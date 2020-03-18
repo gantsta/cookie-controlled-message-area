@@ -1,0 +1,56 @@
+#message_area{
+	background-color: #d5361c;									// gov.uk Coronavirus red
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+	z-index: 100;
+	@media only screen and (min-width:1200px){
+		width: 30%;
+		max-width: 20rem;
+		bottom: 2rem;
+		left: 1rem;
+	}
+	#ma_title,
+	#ma_title strong{
+		color: white;
+		font-size: 16px;
+		line-height: 1.25em;
+		display: block;
+	}
+	p{
+		font-size: 14px;
+		color: white;
+		line-height: 1.5;
+		margin-top: 0.25em;
+	}
+	a{
+		color: white;
+		font-weight: bold;
+		text-decoration: underline;
+		transition: opacity 0.15s;
+		&:hover{
+			text-decoration: none;
+			opacity: 0.75;
+		}
+	}
+	button{
+		border: none;
+		border-radius: 0;
+		text-align: inherit;
+		padding: 0;
+		text-transform: none;
+		font-weight: bold;
+		font-size: 14px;
+		text-decoration: underline;
+		color: white;
+		width: auto;
+		transition: opacity 0.15s;
+		background-color: transparent;
+		&:hover{
+			text-decoration: none;
+			opacity: 0.75;
+		}
+	}
+}
